@@ -42,7 +42,7 @@ const BetSlipForm = () => {
       )}
       <div className="relative px-2 sm:px-0 mt-2 md:mt-0">
         <div
-          className={`mb-10 relative border border-neutral-700  shadow-md transform transition ease-linear duration-100  rounded-2xl overflow-hidden xs:w-11/12 sm:w-4/6 md:w-full mx-auto`}
+          className={`mb-10 relative border-2 border-gray-100  shadow-md transform transition ease-linear duration-100  rounded-2xl overflow-hidden xs:w-11/12 sm:w-4/6 md:w-full mx-auto`}
         >
           <div
             className={`relative w-full border bg-white border-b-8 border-neutral-300  rounded-2xl  transform transition ease-linear duration-100    px-4 py-3`}

@@ -36,8 +36,8 @@ const AddBetSlip = () => {
   }, 1800000);
 
   return (
-    <section className="relative bg-stone-50  -mx-2 h-fit pt-[68px] sm:pt-2 md:flex md:pt-24 md:px-4 lg:px-8 xl:px-14">
-      <div className=" md:px-3  shadow-lg md:pt-5 rounded-xl md:w-1/4 md:min-h-screen">
+    <section className="bg-white relative w-full md:-mx-2 h-fit pt-[68px] sm:pt-2 md:flex md:pt-24 px-6 md:px-4 lg:px-8 xl:px-14">
+      <div className=" md:px-3  md:pt-5 rounded-xl md:w-1/4 md:min-h-screen">
         <div className="pb-4">
           <BetSlipForm />
 

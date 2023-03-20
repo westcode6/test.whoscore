@@ -2,9 +2,9 @@ import React from "react";
 import { BsBookmarkDash } from "react-icons/bs";
 export default function NewsPanel() {
   return (
-    <main className="px-6 py-2 bg-white rounded-3xl">
+    <main className="px-6 py-2 pb-24 bg-white rounded-3xl">
       <h1 className="text-lg text-gray-800  font-bold mt-4">Trending News 🔥</h1>
-      <header className="mt-2">
+      <header className="mt-6 md:mt-2">
         <img
           src="./assets/images/chealsea.jpg"
           className="w-full h-60 rounded-2xl object-cover shadow-2xxl border-4 border-gray-100"

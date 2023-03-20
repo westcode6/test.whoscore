@@ -58,7 +58,7 @@ export default function PageCalender() {
       >
         <p className="pointer-events-none">{"Sun"}</p>
         <span className="text-sm text-gray-900 font-extrabold uppercase pointer-events-none mt-2">
-          {getYesterdaysDate - 1}
+          {getYesterdaysDate - 2}
         </span>
       </div>
 
@@ -88,7 +88,7 @@ export default function PageCalender() {
       >
         <p className="pointer-events-none">{"Tue"}</p>
         <span className="text-sm text-gray-900 font-extrabold uppercase pointer-events-none mt-2">
-          {getYesterdaysDate - 1}
+          {getYesterdaysDate}
         </span>
       </div>
       {/* End of static data */}
@@ -123,7 +123,7 @@ export default function PageCalender() {
       >
         <p className="pointer-events-none">{dPrevDay}</p>
         <span className="text-sm text-gray-900 font-extrabold uppercase pointer-events-none mt-2">
-          {getYesterdaysDate}
+          {getYesterdaysDate + 2}
         </span>
       </div>
 
@@ -142,7 +142,7 @@ export default function PageCalender() {
           {dNextDay}
         </p>
         <span className="text-sm text-gray-900 font-extrabold uppercase pointer-events-none mt-2">
-          {tomorrowsDate}
+          {tomorrowsDate + 3}
         </span>
       </div>
 
@@ -159,7 +159,7 @@ export default function PageCalender() {
       >
         <p className="pointer-events-none">{dNextNextDay}</p>
         <span className="text-sm text-gray-900 font-extrabold uppercase pointer-events-none mt-2">
-          {nextTomorrowsDate}
+          {nextTomorrowsDate + 4}
         </span>
       </div>
 

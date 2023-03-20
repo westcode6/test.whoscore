@@ -65,27 +65,25 @@ export default function LiveMatchComponent() {
       </div>
 
       <main className="">
-        <LiveMatch />
-        <LiveMatch />
-        <LiveMatch />
-        <LiveMatch />
-        <LiveMatch />
-        <LiveMatch />
-        <LiveMatch />
-        <LiveMatch />
-        <LiveMatch />
-        <LiveMatch />
-        <LiveMatch />
-        <LiveMatch />
-        <LiveMatch />
-        <LiveMatch />
-        <LiveMatch />
+        <LiveMatch liveScore="2 : 4" liveTime="65" firstTeam="Arsenal" firstTeamLogo={"./assets/ClubBanners/arsenal.webp"} secondTeam="Bayern" secondTeamLogo={"./assets/ClubBanners/bayern.webp"}  />
+
+        <LiveMatch liveScore="1 : 1" liveTime="89" firstTeam="chelsea" firstTeamLogo={"./assets/ClubBanners/chelsea.png"} secondTeam="Liverpool" secondTeamLogo={"./assets/ClubBanners/liverpool.png"}  />
+
+        <LiveMatch liveScore="4 : 1" liveTime="74" firstTeam="Hullcity" firstTeamLogo={"./assets/ClubBanners/hullcity.png"} secondTeam="Juventus" secondTeamLogo={"./assets/ClubBanners/juventus.jpg"}  />
+
+        <LiveMatch liveScore="2 : 3" liveTime="55" firstTeam="Real Madrid" firstTeamLogo={"./assets/ClubBanners/realMadrid.png"} secondTeam="Bayern" secondTeamLogo={"./assets/ClubBanners/bayern.webp"}  />
+
+        <LiveMatch liveScore="3 : 0" liveTime="68" firstTeam="Dortmund" firstTeamLogo={"./assets/ClubBanners/dortmund.svg"} secondTeam="man United" secondTeamLogo={"./assets/ClubBanners/manU.png"}  />
+        <LiveMatch liveScore="2 : 4" liveTime="65" firstTeam="Tottenham" firstTeamLogo={"./assets/ClubBanners/tottenham.png"} secondTeam="Westbrom" secondTeamLogo={"./assets/ClubBanners/westbrom.png"}  />
+
+        <LiveMatch liveScore="2 : 4" liveTime="65" firstTeam="Arsenal" firstTeamLogo={"./assets/ClubBanners/arsenal.webp"} secondTeam="Bayern" secondTeamLogo={"./assets/ClubBanners/bayern.webp"}  />
+      
       </main>
     </div>
   );
 }
 
-export function LiveMatch() {
+export function LiveMatch({liveScore, liveTime,firstTeam, firstTeamLogo, secondTeam, secondTeamLogo}) {
   return (
     <>
       <div className="my-4 ">
@@ -95,33 +93,33 @@ export function LiveMatch() {
             <span className="text-gray-500 text-lg">
               <AiOutlineStar />
             </span>
-            <p className="text-sm text-red-500">78'</p>
+            <p className="text-xs text-red-500">{liveTime}'</p>
           </div>
 
           {/* Center */}
           <div className="flex items-center justify-around space-x-3">
             <div className="flex items-center space-x-2">
               <img
-                src="./assets/ClubBanners/liverpool.png"
+                src={firstTeamLogo}
                 className="w-8 h-8 object-cover"
-                alt="juventus"
+                alt={firstTeam}
               />
 
-              <h4 className="text-sm text-gray-900 font-bold">Juventus</h4>
+              <h4 className="text-sm text-gray-900 font-bold">{firstTeam}</h4>
             </div>
 
             <div>
-              <p className="px-3 py-1 text-xs font-extrabold rounded-full bg-gray-50 border border-gray-100 shadow-inner">
-                1 : 2
+              <p className="px-1.5 py-1 text-xs font-extrabold rounded-full bg-gray-50 border border-gray-100 shadow-inner">
+                {liveScore}
               </p>
             </div>
 
             <div className="flex items-center space-x-2">
-              <h4 className="text-sm text-gray-900 font-bold">Hullcity</h4>
+              <h4 className="text-sm text-gray-900 font-bold">{secondTeam}</h4>
               <img
-                src="./assets/ClubBanners/hullcity.png"
+                src={secondTeamLogo}
                 className="w-8 h-8 object-cover"
-                alt="juventus"
+                alt={secondTeam}
               />
             </div>
           </div>

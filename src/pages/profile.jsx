@@ -8,12 +8,12 @@ import PageLayout from "../layout/layout";
 export default function Profile() {
   return (
     <PageLayout>
-      <div className="px-5 py-10 mt-12 mb-20 root-container h-full">
+      <div className="px-5 py-10 mt-12 pb-20 root-container h-screen">
         <a href="/home">
           <FaLongArrowAltLeft />
         </a>
 
-        <div className="w-full border-2 border-gray-900 rounded-md px-2 xsm:px-4 py-8 mt-10">
+        <div className="w-full bg-white border-2 border-gray-200 rounded-xl px-2 xsm:px-4 py-8 mt-10">
           <a
             href="##"
             className="flex items-center justify-between border-b border-neutral-200 transform transition hover:-translate-y-1 sm:selection:hover:shadow-xl p-2 rounded-md mb-10 font-semibold"
