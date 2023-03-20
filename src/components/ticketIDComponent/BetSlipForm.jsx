@@ -42,7 +42,7 @@ const BetSlipForm = () => {
       )}
       <div className="relative px-2 sm:px-0 mt-2 md:mt-0">
         <div
-          className={`mb-10 relative border-2 border-gray-100  shadow-md transform transition ease-linear duration-100  rounded-2xl overflow-hidden xs:w-11/12 sm:w-4/6 md:w-full mx-auto`}
+          className={`mb-10 relative border border-gray-600  shadow-md transform transition ease-linear duration-100  rounded-2xl overflow-hidden xs:w-11/12 sm:w-4/6 md:w-full mx-auto`}
         >
           <div
             className={`relative w-full border bg-white border-b-8 border-neutral-300  rounded-2xl  transform transition ease-linear duration-100    px-4 py-3`}
@@ -69,7 +69,7 @@ const BetSlipForm = () => {
                     id="standard-select"
                     value={betPlatform}
                     onChange={(e) => setBetPlatform(e.target.value)}
-                    className="border border-gray-400 focus:outline-none focus:ring focus:ring-gray-300 bg-white text-sm w-full rounded-xl h-12 px-2 py-2"
+                    className="border-2 border-gray-400 focus:outline-none focus:ring focus:ring-gray-300 bg-white text-sm  text-gray-600 font-semibold w-full rounded-xl h-12 px-2 py-2"
                   >
                     <option>Select Betting Platform</option>
                     <option value="bet9ja">Bet9ja</option>

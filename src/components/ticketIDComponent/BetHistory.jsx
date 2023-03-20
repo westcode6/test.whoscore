@@ -19,7 +19,7 @@ const BetHistory = () => {
 
   return (
     <div className="w-full px-4 md:px-1 sm:py-4 pt-4 pb-32" id="betHistory">
-      <h3 className="text-center text-lg my-6 semi-bold">Bet History</h3>
+      <h3 className="text-center text-lg my-6 font-bold">Bet History</h3>
 
       {/* Tailwind Accordion For Pending Tickets */}
 
