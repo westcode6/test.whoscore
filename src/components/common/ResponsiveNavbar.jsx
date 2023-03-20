@@ -1,5 +1,5 @@
 import React from "react";
-import { GiSoccerKick, GiHockey } from "react-icons/gi";
+import { GiHockey } from "react-icons/gi";
 import { TiVideo } from "react-icons/ti";
 import { TbCricket, TbBallTennis } from "react-icons/tb";
 import {
@@ -25,9 +25,7 @@ export default function ResponsiveNavbar() {
                 to="/home"
                 className="pr-2 md:pr-4 text-black  logo-font sm:text-xl flex items-center"
               >
-                <span className="p-1 bg-white shadow-inner rounded-full   text-black text-4xl">
-                  <GiSoccerKick />
-                </span>
+          
                 <span className=""> WhoScore</span>
               </NavLink>
             </div>
@@ -268,7 +266,7 @@ function NavItem({ title, to = "#", icon, active }) {
         className={`h-[67px] flex items-center ${active && "font-black"}`}
       >
         <div
-          className={`flex items-center hover:bg-gray-900 hover:text-lime-400 hover:p-2 rounded-2xl  text-sm text-gray-700  ${
+          className={`flex items-center hover:bg-gray-900 transform transition ease-in-out duration-300  hover:text-lime-400 hover:p-2 rounded-2xl  text-sm text-gray-700  ${
             active && " bg-dark p-2 rounded-2xl text-lime-400  font-bold"
           }`}
         >

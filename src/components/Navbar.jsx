@@ -34,7 +34,7 @@ export default function Navbar() {
             <Link>
               <div>
                 <span
-                  className="text-xl"
+                  className="text-2xl"
                   onClick={() => {
                     setDisplaySearchInput(!displaySearchInput);
                     !displaySearchInput && setSearchText("");
@@ -47,7 +47,7 @@ export default function Navbar() {
             <Link to={"/profile"}>
               <div>
                 <span
-                  className="text-lg p-2 block rounded-full shadow-inner"
+                  className="text-xl p-2 block rounded-full shadow-inner"
                   onClick={() => {
                     setDisplaySearchInput(!displaySearchInput);
                     !displaySearchInput && setSearchText("");

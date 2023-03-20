@@ -32,7 +32,7 @@
 }
 
 .watchPageSideNavLinks {
-  @apply mt-5 py-3  bg-white hover:shadow-2xl hover:shadow-zinc-600  text-gray-600 hover:text-gray-900 transform transition ease-in duration-100 font-medium  hover:font-bold rounded-3xl;
+  @apply mt-5 py-3  bg-white hover:shadow-2xl shadow-xl text-gray-600 hover:text-gray-900 transform transition ease-in duration-100 font-medium  hover:font-bold rounded-lg;
 }
 
 .watchPageTitle {
@@ -48,7 +48,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-image: url(/public/assets/icons/table.jpg);
+  background-image: url(/public/assets/icons/offi.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -73,7 +73,6 @@ color: linear-gradient(338deg, #6900ff 0%, #9951ff 100%);
 
 
 /* ELEMENTS Styles */
-
   .footer-bg {
     background-image: url(/public/assets/icons/bg5.jpg);
 

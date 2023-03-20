@@ -40,7 +40,7 @@ export default function WatchPageScreen() {
         >
           
 
-          <section className="lg:mr-2 md:pt-8 overflow-hidden md:mt-2 lg:mt-0 rounded-b-3xl md:rounded-3xl">
+          <section className="lg:mr-2 md:pt-8 overflow-hidden md:mt-2 lg:mt-0 rounded-b-3xl md:rounded-3xl lg:px-10">
             <WatchPagePanel />
 
             <div className="md:hidden">
@@ -59,10 +59,10 @@ export default function WatchPageScreen() {
 export function WatchPageSideNav() {
   return (
     <>
-     <div className="h-[84%] rounded-xl mt-28  lg:mx-6">
-          <nav className="w-60 hidden mt-1 bg-white shadow-2xl shadow-gray-500  md:flex flex-col items-center rounded-3xl py-4 ">
+     <div className="h-screen  mt-20 bg-white lg:px-6 shadow-2xl shadow-gray-500 ">
+          <nav className="w-60 hidden mt-4 bg-white  md:flex flex-col items-center rounded-3xl py-4 ">
             <ul className="w-full px-6 capitalize">
-              <li className="mt-2 py-3  bg-white shadow-xl shadow-zinc-400/50  text-black transform transition ease-in duration-100 font-extrabold hover:font-bold rounded-3xl">
+              <li className="mt-2 py-3  bg-white shadow-xl shadow-zinc-400/50  text-black transform transition ease-in duration-100 font-extrabold hover:font-bold rounded-lg">
                 <a
                   href="/watchPage"
                   className="flex justify-start space-x-8 px-2 items-center ml-4"

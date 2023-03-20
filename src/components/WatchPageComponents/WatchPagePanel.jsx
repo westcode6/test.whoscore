@@ -32,10 +32,10 @@ export default class WatchPagePanel extends Component {
   render() {
     return (
       <>
-        <div className="bg-white rounded-2xl shadow-2xl shadow-gray-200 mx-2 md:mx-6">
+        <div className="rounded-3xl shadow-2xl bg-white shadow-gray-200">
           <WatchPageHeader />
 
-          <div className="mt-6 ">
+          <div className="">
             <WatchVideosPanel watchVideos={this.state.soccerVideos} />
           </div>
         </div>
@@ -98,21 +98,19 @@ function WatchPageHeader() {
                 </p>
 
                 <div className="px-2 py-12 lg:py-0 lg:pt-12 xl:pt-14 w-full mt-auto flex items-start justify-between">
-                  <div className="flex items-center space-x-3">
-                    <span className="bg-white text-red-500 w-12 h-12 p-4 rounded-full flex items-center justify-center">
-                      <span className="text-3xl block">
-                        <BsFillPlayFill />
-                      </span>
-                    </span>
+                  <div className="flex items-center space-x-3 bg-red-500 text-white rounded-3xl hover:bg-lime-500 hover:text-white shadow-lg px-5 py-2">
+                    
+                       <span className="text-4xl block"> <BsFillPlayFill /></span>
+                  
 
-                    <h4 className="uppercase text-sm text-white font-bold">
+                    <h4 className="uppercase text-sm  font-bold">
                       Play now
                     </h4>
                   </div>
 
                   <div className="flex items-start justify-between space-x-8 pl-8 md:pr-16">
                     <div className="flex flex-col items-center justify-center">
-                      <span className="text-lime-400 mb-3">
+                      <span className="text-red-500 mb-3">
                         <BsFillBookmarkFill />
                       </span>
                       <div className="text-xs bg-dark-text text-center font-bold">
@@ -150,7 +148,7 @@ function WatchPageHeader() {
 function WatchVideosPanel({ watchVideos }) {
   return (
     <>
-      <div className="w-full bg-white px-4 md:px-8 ">
+      <div className="w-full bg-white pt-6 px-4 md:px-8 ">
         <h2 className="text-xl font-bold tracking-normal capitalize">
           All recent Highlights
         </h2>
