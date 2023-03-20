@@ -42,12 +42,12 @@ const BetSlipForm = () => {
       )}
       <div className="relative px-2 sm:px-0 mt-2 md:mt-0">
         <div
-          className={`mb-10 relative border border-gray-600  shadow-md transform transition ease-linear duration-100  rounded-2xl overflow-hidden xs:w-11/12 sm:w-4/6 md:w-full mx-auto`}
+          className={`mb-10 relative bg-white transform transition ease-linear duration-100  rounded-2xl overflow-hidden xs:w-11/12 sm:w-4/6 md:w-full mx-auto`}
         >
           <div
-            className={`relative w-full border bg-white border-b-8 border-neutral-300  rounded-2xl  transform transition ease-linear duration-100    px-4 py-3`}
+            className={`relative w-full bg-white border-2 border-gray-500 shadow-2xl shadow-gray-560  mt-4 rounded-2xl  transform transition ease-linear duration-100    px-6 py-3`}
           >
-            <div className="px-1">
+            <div className="">
               <header>
                 <h2
                   className={`text-2xl md:text-xl text-center text-gray-900 font-semibold tracking-wide  logo-font`}
@@ -55,7 +55,7 @@ const BetSlipForm = () => {
                   WhoScore?
                 </h2>
               </header>
-              <form className="mt-4" onSubmit={(e) => handleSubmit(e)}>
+              <form className="mt-6" onSubmit={(e) => handleSubmit(e)}>
                 <InputElement
                   value={ticketId}
                   onChange={(e) => setTicketId(e.target.value)}
@@ -80,7 +80,7 @@ const BetSlipForm = () => {
 
                   <button
                     type="submit"
-                    className="w-full mt-10 mb-6 bg-black transform ease-in transition hover:-translate-y-0.5 duration-200 text-sm text-white uppercase font-bold rounded-xl hover:shadow-md shadow-black py-4"
+                    className="w-full mt-6 mb-6 bg-black transform ease-in transition hover:-translate-y-0.5 duration-200 text-sm text-white uppercase font-bold rounded-xl hover:shadow-md shadow-black py-4"
                   >
                     Load games
                   </button>
