@@ -1,0 +1,95 @@
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+.shadow-fit {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.bg-dark {
+  background: #16181d;
+}
+
+.bg-dark-text {
+  color: #c4c4c4;
+}
+
+
+
+
+li > ul {
+  transform: translatex(100%) scale(0);
+}
+li:hover > ul {
+  transform: translatex(101%) scale(1);
+}
+li > button svg {
+  transform: rotate(-90deg);
+}
+li:hover > button svg {
+  transform: rotate(-270deg);
+}
+
+.group:hover .group-hover\:scale-100 {
+  transform: scale(1);
+}
+.group:hover .group-hover\:-rotate-180 {
+  transform: rotate(180deg);
+}
+.scale-0 {
+  transform: scale(0);
+}
+.min-w-32 {
+  min-width: 8rem;
+}
+.logo-font {
+  font-family: "Russo One", sans-serif;
+}
+
+.bg-gray {
+  background-color: #eff1ed;
+}
+
+.carousel-item {
+  display: none;
+}
+
+.carousel-item-visible {
+  display: block;
+  animation: fadeVisibility 0.6s ease;
+}
+
+/* React Player Styles */
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.coming-soon {
+  background: -webkit-linear-gradient(#1e91d6, #6fedb7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

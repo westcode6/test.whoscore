@@ -1,0 +1,9 @@
+{
+    "[json]": {
+        "editor.quickSuggestionsDelay": 10
+    },
+    "cSpell.words": [
+        "fortawesome",
+        "fullname"
+    ]
+}
